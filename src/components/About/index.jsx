@@ -5,6 +5,8 @@ import { faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faSass } from '@fortawe
 import Loader from 'react-loaders';
 import './index.scss';
 
+
+
 const About = () => {
     const [letterClass , setLetterClass] = useState('text-animate');
 
@@ -16,7 +18,12 @@ const About = () => {
 
     return ( 
         <>
+        <div className="stars">
+            <div className="twinkling"></div>
+            <div className="clouds"></div>
+            </div>
         <div className="container about-page">
+            
             <div className="text-zone">
                 <h1>
                     <AnimatedLetters
@@ -36,24 +43,25 @@ const About = () => {
                 </p>
             </div>
             <div className="stage-cube-cont">
+            
                 <div className="cubespinner">
                     <div className="face1">
-                        <FontAwesomeIcon icon={faSass} color='#CD6799' />
+                        <FontAwesomeIcon icon={faSass}  />
                     </div>
                     <div className="face2">
-                        <FontAwesomeIcon icon={faHtml5} color='#F06529' />
+                        <FontAwesomeIcon icon={faHtml5}  />
                     </div>
                     <div className="face3">
-                        <FontAwesomeIcon icon={faCss3} color='#28A4D9' />
+                        <FontAwesomeIcon icon={faCss3}  />
                     </div>
                     <div className="face4">
-                        <FontAwesomeIcon icon={faReact} color='#5ED4F4' />
+                        <FontAwesomeIcon icon={faReact}  />
                     </div>
                     <div className="face5">
-                        <FontAwesomeIcon icon={faJsSquare} color='#EFD18D' />
+                        <FontAwesomeIcon icon={faJsSquare} />
                     </div>
                     <div className="face6">
-                        <FontAwesomeIcon icon={faGitAlt} color='#EC4D28' />
+                        <FontAwesomeIcon icon={faGitAlt}  />
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
     width: 50%;
     height: 100%;
     top: 0;
-    padding-top: 10%;
+    padding-top: 18%;
     margin-left: 0;
     position: absolute;
     right: 0;
@@ -24,30 +24,37 @@
         height: 200px;
         border: 1px solid #ccc;
         background: rgba(225, 225, 225, 0.4);
-        font-size: 120px;
+        font-size: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 20px 0 lightyellow;
+        box-shadow: 0px 0px 20px 0px lightblue;
+        border-radius: 8px;
     }
 
     .face1 {
         transform: translateZ(100px);
+        color: #CD6799;
     }
     .face2 {
         transform: rotateY(90deg) translateZ(100px);
+        color: #F06529;
     }
     .face3 {
         transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        color: #28A4D9;
     }
     .face4 {
         transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        color: #5ED4F4;
     }
     .face5 {
         transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        color: #EFD18D;
     }
     .face6 {
         transform: rotateX(-90deg) translateZ(100px);
+        color: #EC4D28;
     }
 }
 
@@ -60,7 +67,7 @@
       transform: rotateY(-90deg) rotateZ(90deg);
     }
     33% {
-      transform: rotateY(-90deg) rotateX(90deg);
+      transform: rotateY(-90deg) rotateX(0deg);
     }
     50% {
       transform: rotateY(-180deg) rotateZ(90deg);
@@ -72,3 +79,76 @@
       transform: rotateX(90deg);
     }
   }
+
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+.stars {
+background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+z-index:0;
+}
+
+.twinkling{
+background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+z-index:1;
+
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:3;
+
+-moz-animation:move-clouds-back 200s linear infinite;
+-ms-animation:move-clouds-back 200s linear infinite;
+-o-animation:move-clouds-back 200s linear infinite;
+-webkit-animation:move-clouds-back 200s linear infinite;
+animation:move-clouds-back 200s linear infinite;
+}
