@@ -23,6 +23,7 @@
     "react-leaflet": "^4.2.1",
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.22.0",
+    "react-star-sky": "^1.0.3",
     "sass": "^1.70.0"
   },
   "devDependencies": {

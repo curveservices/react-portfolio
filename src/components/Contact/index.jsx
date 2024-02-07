@@ -65,7 +65,7 @@ const Contact = () => {
                                     <textarea placeholder='Message' name='message' required></textarea>
                                 </li>
                                 <li>
-                                    <input type='submit' className='flat-button' value='send' />
+                                    <input type='submit' className='flat-button' value='Send' />
                                 </li>
                             </ul>
                         </form>
@@ -84,7 +84,6 @@ const Contact = () => {
                         <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'/>
                         <Marker position={[51.505, 0.0182269]}>
                             <Popup>We are here</Popup>
-
                         </Marker>
                     </MapContainer>
                 </div>

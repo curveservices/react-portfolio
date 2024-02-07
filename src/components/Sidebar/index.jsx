@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import './Sidebar.scss'
+import './index.scss'
 import LogoS from '../../assets/images/id.png'
 import subLogo from '../../assets/images/immutable.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

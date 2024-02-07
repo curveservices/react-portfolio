@@ -59,19 +59,22 @@
     .flat-button {
         color: #ffd700;
         background: 0 0;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
         border: 1px solid #ffd700;
         border-radius: 4px;
         float: right;
+        text-transform: uppercase;
+        text-align: center;
+        margin-right: 10px;
     }
 }
 
 .info-map {
     position: absolute;
-    background: #000;
+    background: #115173;
     top: 50px;
     right: 30%;
     z-index: 999999;
