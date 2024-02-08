@@ -5,6 +5,7 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
+    background: #000;
 
     .logo {
         display: block;
@@ -46,6 +47,7 @@
 
             &:hover {
                 color: #ffd700;
+                transform: scale(1.3);
 
                 svg {
                     opacity: 0;
@@ -115,10 +117,11 @@
                 padding: 8px;
                 display: block;
                 font-size: 18px;
-                line-height: 18px;
+                line-height: 20px;
                 
                 &:hover svg {
                     color: #ffd700;
+                    transform: scale(1.5) ;
                 }
             }
         }

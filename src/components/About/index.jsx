@@ -41,6 +41,7 @@ const About = () => {
                 <p>If I need to define myself in one sentance that would be a family person,
                     food enthusiast, cat lover and tech-obsessed!
                 </p>
+                <div className="backdrop"></div>
             </div>
             <div className="stage-cube-cont">
             

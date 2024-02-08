@@ -74,15 +74,15 @@ const Contact = () => {
                 <div className="info-map">
                     Paul Rossiter,
                     <br />
-                    United Kingdom,
+                    London, SE10 0LW
                     <br />
-                    13b Westerdale Road, London, SE10 0LW
+                    United Kingdom,
                     <span>p.rossiter833@gmail.com</span>
                 </div>
                 <div className="map-wrap">
-                    <MapContainer center={[51.505, 0.0182269]} zoom={13}>
+                    <MapContainer center={[51.5, 0.0192269]} zoom={13}>
                         <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'/>
-                        <Marker position={[51.505, 0.0182269]}>
+                        <Marker position={[51.4852, 0.0175]}>
                             <Popup>We are here</Popup>
                         </Marker>
                     </MapContainer>

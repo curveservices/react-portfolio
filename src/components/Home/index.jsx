@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './HomeImage';
 import './index.scss';
 
 const Home = () => {
@@ -39,9 +40,9 @@ const Home = () => {
                 </h1>
                 <h2>Frontend developer / Javascript Expert </h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
-                
             </div>
         </div>
+        <Logo />
         <Loader type='pacman' />
         </>
      );
