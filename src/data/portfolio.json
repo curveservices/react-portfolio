@@ -1,0 +1,52 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "name": "Shopping Cart",
+      "desc": "A front-end Shop using state & effect, Fakeshop API & react router",
+      "live": "https://immutable-fakeshop.netlify.app/",
+      "repo": "https://github.com/curveservices/shopping-cart",
+      "img": "https://private-user-images.githubusercontent.com/101556296/301791057-e256aef2-8bc4-4589-8d84-eb5eb12c89fc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc1MDI4ODAsIm5iZiI6MTcwNzUwMjU4MCwicGF0aCI6Ii8xMDE1NTYyOTYvMzAxNzkxMDU3LWUyNTZhZWYyLThiYzQtNDU4OS04ZDg0LWViNWViMTJjODlmYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIwOVQxODE2MjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDc4YmU2YmViNzQ0MWVmNWM5ZDAyNWI5NzhkMWU5NTk2M2ZiZTU2YTk1ZDQyYzdiYjI0ZjYwZjE1YWI1MGQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RwXGKQjTEV8h4NGgGib91HZxc4A5wM8gIFOh1mLglGc"
+    },
+    {
+      "id": 2,
+      "name": "Weather app",
+      "desc": "A weather web app, created using weatherAPI.com, JavaScript & CSS.",
+      "live": "https://curveservices.github.io/weather-app/",
+      "repo": "https://github.com/curveservices/weather-app",
+      "img": "https://github.com/curveservices/weather-app/assets/101556296/1de7ba14-ac98-4861-8dbc-42486e1ba2ca"
+    },
+    {
+      "id": 3,
+      "name": "Tic-Tac-Toe",
+      "desc": "A game of Tic Tac Toe. created using HTML CSS & Javascript.",
+      "live": "https://curveservices.github.io/tic-tac-toe/",
+      "repo": "https://github.com/curveservices/tic-tac-toe/blob/main/README.md",
+      "img": "https://user-images.githubusercontent.com/101556296/230607326-48a15036-69c6-4089-bd16-f36d493116e0.png"
+    }, {
+      "id": 4,
+      "name": "To-Do List",
+      "desc": "A ToDo List application, created with JavaScript.",
+      "live": "https://curveservices.github.io/todo-list/#",
+      "repo": "https://github.com/curveservices/todo-list/blob/main/README.md",
+      "icon": "https://github.com/curveservices/todo-list/blob/main/dist/checklist.png?raw=true",
+      "img": "https://github.com/curveservices/todo-list/assets/101556296/95d23ae1-79e1-438c-aa8d-aa5e667c99f7"
+    }, {
+      "id": 5,
+      "name": "Library app",
+      "desc": "A browser based book library, created withJavaScript.",
+      "live": "https://curveservices.github.io/Library/",
+      "repo": "https://github.com/curveservices/Library/tree/main",
+      "icon": "https://github.com/curveservices/Library/blob/main/assets/book-stack.png?raw=true",
+      "img": "https://user-images.githubusercontent.com/101556296/227719310-f121be57-b7c9-40c6-ae5f-048ca0a1ed39.png"
+  }, {
+    "id": 6,
+      "name": "Calculator",
+      "desc": " A browser based calculato, created with Javascript, HTML & CSS",
+      "live": "https://curveservices.github.io/calculator/",
+      "repo": "https://github.com/curveservices/calculator",
+      "icon": "https://github.com/curveservices/calculator/blob/main/images/favicon_io/favicon-32x32.png?raw=true",
+      "img": "https://user-images.githubusercontent.com/101556296/220672876-6a473a2e-c8e8-43ab-8288-a3f61689cae4.png"
+  }
+  ]
+}

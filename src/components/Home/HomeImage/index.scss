@@ -1,65 +1,50 @@
 .img-container {
-    z-index: 0;
-    width: 400px;
-    height: 609px;
+  z-index: 0;
+  width: 400px;
+  height: 609px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+
+  svg {
+    width: 100%;
+    height: auto;
     opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 15%;
     bottom: 0;
-    left: auto;
+    animation: fadeIn 5s 2s;
+
+    .outline {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 100;
+      animation: none;
+    }
+  }
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
     margin: auto;
-  
-    svg {
-      width: 100%;
-      height: auto;
-      bottom: 0;
-      box-shadow: 0 0 30px 2px lightblue;
-      border-radius: 50px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+  }
 
-      .outline {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 100;
-        animation: none;
-      }
+  .svg-container {
+    stroke: #e6e6e6;
+    stroke-width: 4;
+  }
+
+  @keyframes fadeSolid {
+    to {
+      opacity: 1;
     }
-  
-    .solid-logo {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
-      width: 100%;
-      opacity: 0;
-      transition: opacity 1s;
-      z-index: 1;
-      box-shadow: 0 0 30px 2px lightblue;
-      border-radius: 50px;
-    }
-
-    .svg-container {
-        stroke: #ffd700;
-        stroke-width: 4;
-        }
-    
-      @keyframes drawOutline {
-          to {
-              stroke-dashoffset: 0;
-          }
-      }
-      @keyframes fadeSolid {
-          to {
-              opacity: 1;
-          }
-      }
-
-      &.visible {
-          img.solid-logo {
-              opacity: 1;
-          }
-      }
+  }
 }
-  
- 
