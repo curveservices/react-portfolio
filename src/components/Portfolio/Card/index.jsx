@@ -16,9 +16,9 @@ const Card = () => {
               <button className="btn" onClick={() => window.open(port.live)}>
                 VIEW
               </button>
-              <button className="btn" onClick={() => window.open(port.repo)}>
+              {/* <button className="btn" onClick={() => window.open(port.repo)}>
                 <FontAwesomeIcon icon={faGithub} />
-              </button>
+              </button> */}
             </div>
           </div>
         )

@@ -10,7 +10,7 @@
 
   h1 {
     color: #fff;
-    font-size: 53px;
+    font-size: 48px;
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
@@ -76,10 +76,32 @@
       color: #333;
     }
   }
+  ul {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding: 20px 0px;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 8px;
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+
+        &:hover svg {
+          color: #26c9ff;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .tags,
   .home-page h1:before,
   .home-page h1:after {
     display: none;
@@ -104,7 +126,6 @@
     position: relative;
     width: 100%;
     height: auto;
-    top: -30px;
     right: 0;
     box-sizing: border-box;
     margin: auto;

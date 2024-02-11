@@ -1,3 +1,6 @@
+import { faGithub, faLinkedin, faSkype } from '@fortawesome/free-brands-svg-icons'
+import { faX } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { Link } from 'react-router-dom'
@@ -57,6 +60,40 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          <ul>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferer"
+            href="https://www.linkedin.com/in/paul-rossiter-a133a155/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferer"
+            href="https://github.com/curveservices"
+          >
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferer"
+            href="https://twitter.com/Crypto_Rozla"
+          >
+            <FontAwesomeIcon icon={faX} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferer" href="skype:live:p.rossiter_1">
+            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+          </a>
+        </li>
+      </ul>
         </div>
       </div>
       <Logo />

@@ -102,30 +102,7 @@
     }
   }
 
-  ul {
-    position: absolute;
-    top: 65%;
-    width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-
-    li {
-      a {
-        padding: 8px;
-        display: block;
-        font-size: 18px;
-        line-height: 20px;
-
-        &:hover svg {
-          color: #26c9ff;
-          transform: scale(1.5);
-        }
-      }
-    }
-  }
+ 
 }
 
 .hamburger,
@@ -140,7 +117,7 @@
     height: auto;
     min-height: auto;
 
-    ul, nav {
+    nav {
       display: none;
     }
 
@@ -150,6 +127,7 @@
       background: #181818;
       top: 0;
       left: 0;
+      padding-top: 50px;
       position: fixed;
       z-index: 2;
       margin: 0;
