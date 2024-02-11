@@ -133,23 +133,6 @@
       margin: 0;
     }
 
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    a:after {
-      opacity: 1;
-      position: initial;
-      width: auto;
-      margin-left: 10px;
-    }
-
-    a svg {
-      opacity: 1 !important;
-    }
-
     & .mobile-show {
       display: block;
     }
