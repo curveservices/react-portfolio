@@ -22,7 +22,7 @@
     flex: 1 1 20%;
     height: 400px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: calc(25% - 10px);
 
     .portfolio-image {
@@ -44,7 +44,7 @@
         rgba(0, 0, 0, 0.5) 0,
         rgba(0, 0, 0, 1)
       );
-    bottom: -100px;
+      bottom: -100px;
     }
 
     .name {
@@ -54,13 +54,12 @@
       font-size: 24px;
       font-weight: 500;
       line-height: 24px;
-      
     }
 
     .desc {
       font-size: 16px;
       font-weight: 600;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       color: #fff;
     }
 
@@ -85,27 +84,27 @@
     }
 
     &::after {
-        content: "";
-        background: linear-gradient(180deg, #26c9ff, #000);
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-        opacity: 0;
+      content: '';
+      background: linear-gradient(180deg, #26c9ff, #000);
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      opacity: 0;
     }
 
     &:hover:after {
-        opacity: 0.85;
+      opacity: 0.85;
     }
 
     &:hover .content {
-        bottom: 0;
-        background: transparent;
+      bottom: 0;
+      background: transparent;
     }
   }
 }
@@ -113,7 +112,7 @@
 @media screen and (max-width: 1200px) {
   .container.portfolio-page {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 
     h1.page-title {
@@ -123,11 +122,32 @@
 
     .image-box {
       flex: 1 1 50%;
-      height: 350px;
-      max-width: calc(50% - 10px);
+      height: 300px;
+      max-width: calc(50% - 20px);
 
       .portfolio-image {
         object-fit: cover;
+      }
+
+      .name {
+        font-size: 20px 0;
+      }
+  
+      .btn {
+        margin: 20px 5px;
+        padding: 0 15px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+  
+      .btn-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+      }
+
+      .content {
+        padding-left: 5px;
       }
     }
   }

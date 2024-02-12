@@ -15,10 +15,10 @@
       display: block;
       margin: 8px auto;
       width: 60px;
-      height: auto;
 
       &.sub-logo {
-        width: 50%;
+        width: 100%;
+        height: 90px;
       }
     }
   }
@@ -101,8 +101,6 @@
       }
     }
   }
-
- 
 }
 
 .hamburger,
@@ -110,7 +108,7 @@
   display: none;
 }
 
-@media  screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .nav-bar {
     background: transparent;
     position: initial;
@@ -125,16 +123,31 @@
       width: 100%;
       height: 100%;
       background: #181818;
-      top: 0;
+      top: -10px;
       left: 0;
+
       padding-top: 50px;
-      position: fixed;
       z-index: 2;
       margin: 0;
+
+      a {
+        margin-top: -10px;
+      }
+    
+      &.mobile-show  {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
+        height: 40px;
+        animation: slideInRight 0.5s;      
+      }
     }
 
-    & .mobile-show {
-      display: block;
+    img {
+      display: inline;
+      margin: 0;
+      height: 60px;
+    
     }
   }
 
@@ -142,7 +155,7 @@
   .close-icon {
     display: block;
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 15px;
   }
 }

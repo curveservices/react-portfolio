@@ -1,4 +1,8 @@
-import { faGithub, faLinkedin, faSkype } from '@fortawesome/free-brands-svg-icons'
+import {
+  faGithub,
+  faLinkedin,
+  faSkype,
+} from '@fortawesome/free-brands-svg-icons'
 import { faX } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
@@ -38,9 +42,6 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
             <span className="first-letter"> P</span>
@@ -61,39 +62,39 @@ const Home = () => {
             CONTACT ME
           </Link>
           <ul>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferer"
-            href="https://www.linkedin.com/in/paul-rossiter-a133a155/"
-          >
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferer"
-            href="https://github.com/curveservices"
-          >
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferer"
-            href="https://twitter.com/Crypto_Rozla"
-          >
-            <FontAwesomeIcon icon={faX} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferer" href="skype:live:p.rossiter_1">
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
-          </a>
-        </li>
-      </ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferer"
+                href="https://www.linkedin.com/in/paul-rossiter-a133a155/"
+              >
+                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferer"
+                href="https://github.com/curveservices"
+              >
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferer"
+                href="https://twitter.com/Crypto_Rozla"
+              >
+                <FontAwesomeIcon icon={faX} color="#4d4d4e" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" rel="noreferer" href="skype:live:p.rossiter_1">
+                <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <Logo />
