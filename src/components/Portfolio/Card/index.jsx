@@ -14,14 +14,13 @@ const Card = () => {
               <h4 className="name">{port.name}</h4>
               <p className="desc">{port.desc}</p>
               <div className="btn-container">
-              <button className="btn" onClick={() => window.open(port.live)}>
-                VIEW
-              </button>
-              <button className="btn" onClick={() => window.open(port.repo)}>
-                <FontAwesomeIcon icon={faGithub} />
-              </button>
+                <button className="btn" onClick={() => window.open(port.live)}>
+                  VIEW
+                </button>
+                <button className="btn" onClick={() => window.open(port.repo)}>
+                  <FontAwesomeIcon icon={faGithub} />
+                </button>
               </div>
-
             </div>
           </div>
         )

@@ -4,6 +4,14 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faLinkedin,
+  faSkype,
+  faXTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+import SocialIcons from '../SocialIcons'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -90,9 +98,11 @@ const Contact = () => {
         <div className="info-map">
           Paul Rossiter,
           <br />
-          London, SE10 0LW
+          London, SE10
           <br />
           United Kingdom,
+          <br />
+          <SocialIcons />
           <span>p.rossiter833@gmail.com</span>
         </div>
         <div className="map-wrap">

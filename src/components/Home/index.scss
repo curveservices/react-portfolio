@@ -1,5 +1,5 @@
 .home-page {
-  height: 0;
+  height: 0vh;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -75,29 +75,6 @@
     &:hover {
       background-color: #26c9ff;
       color: #333;
-    }
-  }
-  ul {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    padding: 20px 0px;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-
-    li {
-      a {
-        padding: 8px;
-        display: block;
-        font-size: 18px;
-        line-height: 20px;
-
-        &:hover svg {
-          color: #26c9ff;
-          transform: scale(1.5);
-        }
-      }
     }
   }
 }

@@ -1,7 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import LogoS from '../../assets/images/id.png'
-import subLogo from '../../assets/images/immutable.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
@@ -17,10 +16,9 @@ const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
   return (
     <div className="nav-bar">
-      <div className="logo" >
-        <img className='main-logo' src={LogoS} alt="logo" />
-        {/* <img className='sub-logo' src={subLogo} alt='immutable-designs' /> */}
-      </div>
+      <Link to="/" className="logo">
+        <img src={LogoS} alt="logo" />
+      </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
           exact="true"
