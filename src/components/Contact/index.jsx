@@ -4,13 +4,6 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub,
-  faLinkedin,
-  faSkype,
-  faXTwitter,
-} from '@fortawesome/free-brands-svg-icons'
 import SocialIcons from '../SocialIcons'
 
 const Contact = () => {

@@ -1,9 +1,38 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import portfolioData from '../../../data/portfolio.json'
+import { db } from '../../../firebase'
+import { useState,useEffect } from 'react'
+import { collection, getDocs } from 'firebase/firestore'
 
 const Card = () => {
-  const portfolio = portfolioData.portfolio
+  const [portfolio, setPortfolio] = useState([]);
+
+  const fetchData = async () => {
+    try {
+      const portfolioData = [];
+      const snapShot = await getDocs(collection(db, 'portfolio'));
+
+      snapShot.forEach((doc) => {
+        const data = doc.data();
+        portfolioData.push({
+          id: doc.id,
+          img: data.img,
+          name: data.name,
+          desc: data.desc,
+          live: data.live,
+          repo: data.repo,
+        });
+      });
+      setPortfolio(portfolioData);
+    } catch (error) {
+      console.error(' Error fetching data', error)
+    }
+  }
+
+  useEffect(() => {
+    fetchData()
+  },[]);
+
   return (
     <div className="images-container">
       {portfolio.map((port) => {
@@ -29,4 +58,4 @@ const Card = () => {
   )
 }
 
-export default Card
+export default Card;

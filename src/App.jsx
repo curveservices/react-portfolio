@@ -1,4 +1,10 @@
-import { Routes, Route } from 'react-router-dom'
+import { 
+  Route, 
+  createBrowserRouter, 
+  createRoutesFromElements, 
+  RouterProvider, 
+} from 'react-router-dom';
+
 import Layout from './components/Layout'
 import './App.scss'
 import Home from './components/Home'
@@ -6,17 +12,19 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 
-function App() {
-  return (
-    <Routes>
+const router = createBrowserRouter(
+  createRoutesFromElements(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="portfolio" element={<Portfolio />} />
       </Route>
-    </Routes>
-  )
+  ),
+);
+    
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App

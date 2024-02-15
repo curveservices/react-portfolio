@@ -11,9 +11,7 @@ const Logo = () => {
 
   useEffect(() => {
     const solidDelay = 4
-
     bgRef.current.style.opacity = 1
-
     setTimeout(() => {
       solidRef.current.style.animation = `fadeSolid 4s ease-out forwards`
     }, solidDelay * 1000)

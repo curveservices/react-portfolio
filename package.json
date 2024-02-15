@@ -16,6 +16,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "animate.css": "^4.1.1",
+    "dotenv": "^16.4.4",
+    "firebase": "^10.8.0",
     "framer-motion": "^11.0.3",
     "gsap": "^3.12.5",
     "gsap-trial": "^3.12.5",
@@ -38,5 +40,10 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "prettier": "3.2.5",
     "vite": "^5.0.8"
-  }
+  },
+  "description": "## Live Demo 👉",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "paul rossiter",
+  "license": "ISC"
 }
