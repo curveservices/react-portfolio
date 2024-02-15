@@ -15,7 +15,7 @@ import Portfolio from './components/Portfolio'
 const router = createBrowserRouter(
   createRoutesFromElements(
       <Route element={<Layout />}>
-        <Route path='/' element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="portfolio" element={<Portfolio />} />
