@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react'
 import { useRef } from 'react'
 
 const Logo = () => {
-  const [isAnimationComplete, setIsAnimationComplete] = useState(false)
   const bgRef = useRef()
   const outlineRef = useRef()
   const solidRef = useRef()
@@ -20,7 +19,7 @@ const Logo = () => {
   return (
     <div className="img-container" ref={bgRef}>
       <img
-        className={`solid-logo ${isAnimationComplete ? 'visable' : ''}`}
+        className='solid-logo'
         ref={solidRef}
         src={Paul}
         alt="JavaScript Developer"
