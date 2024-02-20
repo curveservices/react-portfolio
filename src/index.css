@@ -15,11 +15,6 @@ body {
   -moz-oxs-font-smoothing: grayscale;
 }
 
-.dashboard {
-  margin-top: 200px;
-  margin-left: 200px;
-}
-
 @media screen and (max-width: 1200px) {
   body {
     overflow: visible;
