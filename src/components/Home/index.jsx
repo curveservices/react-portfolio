@@ -37,7 +37,7 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            <span className={`${letterClass} _14`}>&apos;m</span>
             <span className="first-letter"> P</span>
             <AnimatedLetters
               letterClass={letterClass}
