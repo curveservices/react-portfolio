@@ -3,7 +3,7 @@
   padding-left: 100px;
   width: calc(100% - 150px);
   height: 100%;
-  overflow: auto !important;
+  overflow: auto;
 
   h1.page-title {
     margin-left: 100px;
@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding-bottom: 100px;
+    padding: 0rem 2rem 6.25rem;
   }
 
   .image-box {
