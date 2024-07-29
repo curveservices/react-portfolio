@@ -41,16 +41,17 @@
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.7) 0,
+        rgba(0, 0, 0, 0.9) 0,
         rgba(0, 0, 0, 1)
       );
-      bottom: -100px;
+      bottom: -185px;
     }
 
     .name {
       margin-bottom: 0;
       margin-top: 0;
-      color: #26c9ff;
+      padding: 10px 0;
+      color: #fff;
       font-size: 24px;
       font-weight: 500;
       line-height: 24px;
