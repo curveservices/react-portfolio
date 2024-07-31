@@ -24,6 +24,14 @@
     overflow: hidden;
     border-radius: 10px;
     max-width: calc(25% - 10px);
+    border: solid 1px #26c9ff;
+    background: #333;
+    &:hover {
+      box-shadow:
+          1px 1px 20px #26c9ff,
+          -1px -2px 0px rgba(255, 255, 255, 0.1);
+    }
+    
 
     .portfolio-image {
       position: absolute;
@@ -110,7 +118,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   .container.portfolio-page {
     width: 100%;
     padding: 10px;
@@ -124,7 +132,7 @@
     .image-box {
       flex: 1 1 50%;
       height: 300px;
-      max-width: calc(50% - 20px);
+      max-width: calc(100% - 20px);
 
       .portfolio-image {
         object-fit: cover;
@@ -143,12 +151,14 @@
 
       .btn-container {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 5px;
       }
 
       .content {
         padding-left: 5px;
+        margin-bottom: 20px;
+        text-align: center;
       }
     }
   }

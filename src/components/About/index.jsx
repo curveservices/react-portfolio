@@ -33,18 +33,31 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer seeking opportunities to
-            work with fantasic businesses or with your personal project, I love
-            working with the lastest technologies and on challenging projects.
+            Hello! I’m Paul Rossiter, an ambitious front-end developer who’s looking for
+            businesses who want to improve their website, digital branding and
+            reach a bigger online audience.
           </p>
           <p>
-            I am quietly confident, naturally curious and contsantly working on
-            improving my skill set one project problem at a time.
+            I retrained as a full stack developer in 2021, having decided to embark on
+            a new challenge after 20 years in hospitality.
+            During my career I ran hotels for one of the UK’s biggest breweries,
+            later I founded and ran my own mobile food business.
+            My experience as a business leader means I love working with businesses to
+            help achieve their goals, and means I have a deep understanding of what you
+            need and how to support you with technology.
           </p>
           <p>
-            If I need to define myself in one sentance that would be a social
-            person, food enthusiast, cat lover and tech-obsessed!
+            Many businesses know they need to improve their digital offering,
+            but don’t always know where to start: I can work with you to understand what you,
+            and your clients, need. I’ll show you how to enhance your website and digital services.
+            I don’t do jargon, but I create first-class,
+            fully-optimised and user-friendly digital platforms which put people first.
           </p>
+          <p>My tech stack is <b>MERN</b> stack, I create full stack applications
+            with JavaScript, MongoDB, Express.js, React & Node.js.
+          </p>
+          <p><b>Skills include:</b> HTML5, CSS3, Tailwind, SASS, Next.js,
+            JEST TDD, SQL, Prisma & GIT </p>
         </div>
         <div className="stage-cube-cont">
           <div className="stars">
