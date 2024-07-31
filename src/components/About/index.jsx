@@ -54,10 +54,10 @@ const About = () => {
             fully-optimised and user-friendly digital platforms which put people first.
           </p>
           <p>My tech stack is <b>MERN</b> stack, I create full stack applications
-            with JavaScript, MongoDB, Express.js, React & Node.js.
+            with JavaScript, MongoDB, Express.js, React.js & Node.js.
           </p>
-          <p><b>Skills include:</b> HTML5, CSS3, Tailwind, SASS, Next.js,
-            JEST TDD, SQL, Prisma & GIT </p>
+          <p><b>Skills include:</b> HTML5, CSS3, Tailwind, SASS, TypeScript, Next.js,
+            Jest TDD, SQL, Prisma & GIT </p>
         </div>
         <div className="stage-cube-cont">
           <div className="stars">
