@@ -1,0 +1,217 @@
+.wrapper {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  aspect-ratio: 1;
+  perspective: 100rem;
+  animation: fadeIn 3s forwards;
+  animation-delay: 1s;
+  .circle {
+    position: absolute;
+    top: 15%;
+    left: 14rem;
+    width: 45rem;
+    aspect-ratio: 1;
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    border-radius: 50%;
+    transform-style: preserve-3d;
+  }
+  .circle-1 {
+    transform: rotateY(80deg) rotateX(40deg);
+    animation: circle1Anim 2s infinite linear;
+  }
+  @keyframes circle1Anim {
+    0% {
+      transform: rotateY(80deg) rotateX(40deg);
+    }
+    100% {
+      transform: rotateY(80deg) rotateX(40deg) rotateZ(360deg);
+    }
+  }
+  .circle-2 {
+    transform: rotateY(200deg) rotateX(-40deg);
+    animation: circle2Anim 2s infinite linear;
+  }
+  @keyframes circle2Anim {
+    0% {
+      transform: rotateY(90deg) rotateX(-40deg);
+    }
+
+    100% {
+      transform: rotateY(90deg) rotateX(-40deg) rotateZ(360deg);
+    }
+  }
+  .circle-3 {
+    transform: rotateY(180deg) rotateX(90deg);
+    animation: circle3Anim 2s infinite linear;
+  }
+  @keyframes circle3Anim {
+    0% {
+      transform: rotateY(180deg) rotateX(90deg);
+    }
+    100% {
+      transform: rotateY(180deg) rotateX(90deg) rotateZ(360deg);
+    }
+  }
+  .ball {
+    width: 1rem;
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      rgb(145, 214, 240),
+      70%,
+      rgb(44, 44, 167)
+    );
+    border-radius: 50%;
+    position: absolute;
+    top: -0.5rem;
+    left: calc(50% - 1rem);
+  }
+  .ball-1,
+  .ball-2 {
+    transform: rotateY(-90deg);
+    animation: ballAnim 2s initial linear;
+  }
+  @keyframes ballAnim {
+    0% {
+      transform: rotateY(-90deg);
+    }
+    100% {
+      transform: rotateY(-90deg) rotateX(-360deg);
+    }
+  }
+  .ball-3 {
+    transform: rotateY(90deg) rotateX(90deg);
+    animation: ball3Anim 2s infinite linear;
+  }
+  @keyframes ball3Anim {
+    0% {
+      transform: rotateY(90deg) rotateX(90deg);
+    }
+    100% {
+      transform: rotateY(90deg) rotateX(450deg);
+    }
+  }
+  // .stage-cube-cont {
+  //   perspective: 200rem;
+  //   width: 340px;
+  //   height: 350px;
+  //   .cubespinner {
+  //     position: absolute;
+  //     top: 35%;
+  //     left: 60%;
+  //     overflow: initial;
+  //     animation: spincube 12s ease-in-out infinite;
+  //     transform-style: preserve-3d;
+  //     transform-origin: 50px 100px 0;
+  //     margin-left: calc(50% - 120px);
+  //     div {
+  //       position: absolute;
+  //       width: 200px;
+  //       height: 200px;
+  //       border: 1px solid #ccc;
+  //       background: rgba(225, 225, 225, 0.4);
+  //       font-size: 100px;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       box-shadow: 0px 0px 20px 0px lightblue;
+  //       border-radius: 4px;
+  //     }
+  //     .face1 {
+  //       transform: translateZ(100px);
+  //       color: #f06529;
+  //     }
+  //     .face2 {
+  //       transform: rotateY(90deg) translateZ(100px);
+  //       color: #2965f1;
+  //     }
+  //     .face3 {
+  //       transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  //       color: #5ed4f4;
+  //     }
+  //     .face4 {
+  //       transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  //       color: #f7df1e;
+  //     }
+  //     .face5 {
+  //       transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  //       color: #f34f29;
+  //     }
+  //     .face6 {
+  //       transform: rotateX(-90deg) translateZ(100px);
+  //       color: #cc6699;
+  //     }
+  //   }
+  //   @keyframes spincube {
+  //     from,
+  //     to {
+  //       transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  //     }
+  //     16% {
+  //       transform: rotateY(-90deg) rotateZ(90deg);
+  //     }
+  //     33% {
+  //       transform: rotateY(-90deg) rotateX(0deg);
+  //     }
+  //     50% {
+  //       transform: rotateY(-180deg) rotateZ(90deg);
+  //     }
+  //     66% {
+  //       transform: rotateY(-270deg) rotateX(90deg);
+  //     }
+  //     83% {
+  //       transform: rotateX(90deg);
+  //     }
+  //   }
+  // }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: none;
+    // width: 80%;
+    // height: 50%;
+    // .circle {
+    //   top: 0%;
+    //   left: 5rem;
+    //   width: 15rem;
+    // }
+    // .ball {
+    //   width: 0.5rem;
+    // }
+    // .stage-cube-cont {
+    //   .cubespinner {
+    //     top: 10%;
+    //     left: 18%;
+    //     transform-origin: 50px 50px 0;
+    //     margin-left: calc(50% - 100px);
+    //     div {
+    //       width: 100px;
+    //       height: 100px;
+    //       font-size: 50px;
+    //     }
+    //     .face1 {
+    //       transform: translateZ(50px);
+    //     }
+    //     .face2 {
+    //       transform: rotateY(90deg) translateZ(50px);
+    //     }
+    //     .face3 {
+    //       transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+    //     }
+    //     .face4 {
+    //       transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+    //     }
+    //     .face5 {
+    //       transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+    //     }
+    //     .face6 {
+    //       transform: rotateX(-90deg) translateZ(50px);
+    //     }
+    //   }
+    // }
+  }
+}
