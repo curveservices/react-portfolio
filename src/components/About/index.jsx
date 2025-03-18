@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import './index.scss'
+import CubeSpinner from '../cubespinner'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -56,10 +57,11 @@ const About = () => {
           <p>My tech stack is <b>MERN</b> stack, I create full stack applications
             with JavaScript, MongoDB, Express.js, React.js & Node.js.
           </p>
-          <p><b>Skills include:</b> HTML5, CSS3, Tailwind, SASS, TypeScript, Next.js,
-            Jest TDD, SQL, Prisma & GIT </p>
+          <p><b>Skills include:</b> HTML5, CSS3, React, Tailwind, SASS, TypeScript, Next.js,
+            Jest TDD, SQL, Prisma, GIT & Figma </p>
         </div>
-        <div className="stage-cube-cont">
+        <CubeSpinner />
+        {/* <div className="stage-cube-cont">
           <div className="stars">
             <div className="twinkling"></div>
             <div className="clouds"></div>
@@ -84,7 +86,7 @@ const About = () => {
               <FontAwesomeIcon icon={faGitAlt} />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Loader type="pacman" />
     </>
