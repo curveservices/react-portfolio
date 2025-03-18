@@ -1,0 +1,116 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0rem;
+}
+.flip-card {
+    background-color: transparent;
+    width:  300px;
+    height: 300px;
+    perspective: 1000px;
+    color: #fff;
+    cursor: pointer;
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transform-style: preserve-3d;
+        transition: all 0.6s cubic-bezier(0.645, 0.045, 0.0355, 1);
+    }
+
+    &:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flip-card-front {
+        background: #21212199;
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            opacity: 1;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            padding: 0 0.3rem;
+        }
+
+        .front-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -8rem;
+            background: #21212199;
+            min-width: fit-content;
+            height: 80px;
+            width: 100%;
+            z-index: 9999;
+        }
+    }
+
+    .flip-card-back {
+        color: #fff;
+        transform: rotateY(180deg);
+        padding: 0rem 0rem;
+        position: relative;
+
+        .card-back-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            opacity: 0.8;
+            z-index: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .name,
+        .desc {
+            position: relative;
+            z-index: 1;
+            padding: 0rem 2rem 1rem;
+            margin: 0;
+            text-shadow: #000 5px 5px 10px;
+        }
+        .name {
+            font-size: 2rem;
+        }
+        .desc {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .btn-container {
+            margin-top: 2rem;
+            z-index: 1;
+            
+        }
+    }
+}

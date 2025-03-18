@@ -3,6 +3,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { db } from '../../../firebase'
 import { useState,useEffect } from 'react'
 import { collection, getDocs } from 'firebase/firestore'
+import './index.scss'
+import Button from '../../button'
 
 const Card = () => {
   const [portfolio, setPortfolio] = useState([]);
@@ -21,6 +23,7 @@ const Card = () => {
           desc: data.desc,
           live: data.live,
           repo: data.repo,
+          backImage: data.backImage
         });
       });
       setPortfolio(portfolioData);
@@ -34,24 +37,47 @@ const Card = () => {
   },[]);
 
   return (
-    <div className="images-container">
+    <div className="card-container">
       {portfolio.map((port) => {
         return (
-          <div className="image-box" key={port.id}>
-            <img src={port.img} alt="portfolio" className="portfolio-image" />
-            <div className="content">
-              <h4 className="name">{port.name}</h4>
-              <p className="desc">{port.desc}</p>
-              <div className="btn-container">
-                <button className="btn" onClick={() => window.open(port.live)}>
-                  VIEW
-                </button>
-                <button className="btn" onClick={() => window.open(port.repo)}>
-                  <FontAwesomeIcon icon={faGithub} />
-                </button>
-              </div>
+          <div className="flip-card" key={port.id}>
+            <div className="flip-card-inner">
+                <div className="flip-card-front">
+                    <img
+                        src={port.img}
+                        alt={port.name}
+                        loading="lazy"
+                        className="card-image"
+                    />
+                    <div className="front-title">
+                        <h3 className="name">{port.name}</h3>
+                    </div>
+                </div>
+                <div className="flip-card-back">
+                    <img
+                        src={port.backImage}
+                        alt={port.name}
+                        loading="lazy"
+                        className="card-back-image"
+                    />
+                    <h3 className="name">{port.name}</h3>
+                    <p className="desc subtitle">{port.desc}</p>
+                    <div className="btn-container">
+                      <Button
+                        text='View'
+                        link={port.live}
+                        target='_blank'
+                      />
+                      <Button 
+                        text={<FontAwesomeIcon icon={faGithub} />}
+                        link={port.repo}
+                      />
+                        
+                          
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
         )
       })}
     </div>
