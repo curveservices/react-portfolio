@@ -23,6 +23,9 @@
 
     &:hover .flip-card-inner {
         transform: rotateY(180deg);
+        .front-title {
+            display: none;
+        }
     }
 
     .flip-card-front,
@@ -108,9 +111,17 @@
             font-weight: 600;
         }
         .btn-container {
+            display: flex;
             margin-top: 2rem;
             z-index: 1;
             
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .flip-card-back {
+        .btn-container {
+            gap: 2rem;
         }
     }
 }
