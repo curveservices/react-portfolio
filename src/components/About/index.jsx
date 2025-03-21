@@ -1,14 +1,5 @@
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJsSquare,
-  faReact,
-  faSass,
-} from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import './index.scss'
 import CubeSpinner from '../cubespinner'
@@ -61,32 +52,6 @@ const About = () => {
             Jest TDD, SQL, Prisma, GIT & Figma </p>
         </div>
         <CubeSpinner />
-        {/* <div className="stage-cube-cont">
-          <div className="stars">
-            <div className="twinkling"></div>
-            <div className="clouds"></div>
-          </div>
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faSass} />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} />
-            </div>
-          </div>
-        </div> */}
       </div>
       <Loader type="pacman" />
     </>
